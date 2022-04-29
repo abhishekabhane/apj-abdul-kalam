@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.heading {
+    height: 30vh;
+    margin-top: 125px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quotes {
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+
+#change-text {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#change-text::before {
+    content: "Dream, Dream, Dream. Dreams transform into thoughts and thoughts result in action.";
+    animation: animate 18s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        content: '"Dream, Dream, Dream. Dreams transform into thoughts and thoughts result in action."';
+    }
+    15% {
+        opacity: 0;
+    }
+    25% {
+        content: '"You have to have a goal but you have to have strategies to achieve it as fast as possible."';
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        content: '"The bird is powered by its own life and by its motivation."';
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    75% {
+        content: '"We should not give up and we should not allow the problem to defeat us."';
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        content: '"Don’t fear for facing failure in the first attempt, because even the successful Maths starts with ‘Zero’ only."';
+        opacity: 1;
+    }
+}
+
+#scroll {
+    height: 60vh;
+    width: 50%;
+    animation: animated 18s ease-in-out infinite;
+    background-size: 100% 100%;
+}
+
+@keyframes animated {
+    0% {
+        background-image: url(1.png);
+    }
+    25% {
+        background-image: url(3.png);
+    }
+    50% {
+        background-image: url(4.png);
+    }
+    75% {
+        background-image: url(5.png);
+    }
+    100% {
+        background-image: url(7.png);
+    }
+}
+
+.biography {
+    text-align: left;
+    color: white;
+}
+
+.biography h5 {
+    font-size: 45px;
+    padding-top: 10px;
+    font-family: 'EB Garamond', serif;
+}
+
+.biography ul {
+    list-style: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+footer {
+    color: white;
+}
+
+@media (max-width:700px) {
+    #scroll {
+        width: 100%;
+    }
+}
